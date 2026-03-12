@@ -17,6 +17,9 @@ Connecting the Photosensitive Sensor
 
 To connecct the Photosensitive sensor to the Raspberry Pi pico 2W connect the VCC pin to the 3V3_OUT pin on the Raspberry Pi pico 2W, and the ground to any ground on the Raspberry Pi pico 2W and the output sensor to any GP pins. On the code, light_sensor = Pin(16, Pin.IN), change 16 to what ever pin you are using.
 
+
 NOTE:
+
 PHOTOSENSITIVE SENSOR WILL NOT WORK IF YOU DON'T PLUG IT INTO THE 3V3_OUT PIN.
-It is recommended to remove the plastic dome around the motion sensor to improve accuracy
+
+It is HIGHLY recommended to remove the plastic dome around the motion sensor to improve accuracy.
