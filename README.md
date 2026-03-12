@@ -22,4 +22,4 @@ NOTE:
 
 PHOTOSENSITIVE SENSOR WILL NOT WORK IF YOU DON'T PLUG IT INTO THE 3V3_OUT PIN.
 
-It is HIGHLY recommended to remove the plastic dome around the motion sensor to improve accuracy.
+Some HC-SR501 Pir Motion IR Sensor comes with a plastic dome around the sensor, it is HIGHLY recommended to remove the plastic dome around the motion sensor to improve accuracy.
