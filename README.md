@@ -8,7 +8,9 @@ change the 20 to whatever GP pin you used.
 
 
 Connecting the Photosensitive Sensor
+
 <img width="269" height="213" alt="Screenshot 2026-03-11 at 23 27 38" src="https://github.com/user-attachments/assets/a4108023-18c9-437d-9531-36c20c4208ce" />
+
 To connecct the Photosensitive sensor to the Raspberry Pi pico 2W connect the VCC pin to the 3V3_OUT pin on the Raspberry Pi pico 2W, and the ground to any ground on the Raspberry Pi pico 2W and the output sensor to any GP pins. On the code, light_sensor = Pin(16, Pin.IN), change 16 to what ever pin you are using.
 
 NOTE:
