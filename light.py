@@ -1,4 +1,4 @@
-from machine import Pin
+from machine import Pin #import the rasberry pi pico 2W pin library
 from time import sleep, time
 
 
