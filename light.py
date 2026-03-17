@@ -3,26 +3,26 @@ from time import sleep, time
 
 
 #sets the led to the proper pins
-led_red1 = Pin(2, Pin.OUT)
-led_red2 = Pin(7, Pin.OUT)
-led_red4 = Pin(11, Pin.OUT)
+led_red1 = Pin(0, Pin.OUT)
+led_red2 = Pin(1, Pin.OUT)
+led_red3 = Pin(2, Pin.OUT)
 led = Pin("LED", Pin.OUT) #The on board led do not change!!
 
 #set the proper pin for the motion sensor, and light sensor
-motion_sensor = Pin(0, Pin.IN, Pin.PULL_DOWN)
-light_sensor = Pin(16, Pin.IN)
+motion_sensor = Pin(22, Pin.IN, Pin.PULL_DOWN)
+light_sensor = Pin(21, Pin.IN)
 
 #turns on all the external led lights
 def On():
     led_red1.on()
     led_red2.on()
-    led_red4.on()
+    led_red3.on()
 
 #turns off all the external led lights
 def Off():
     led_red1.off()
     led_red2.off()
-    led_red4.off()
+    led_red3.off()
 
 #Turns on the night light if there is motion detected, otherwise turns it off. 
 #Waits for 90 seconds before starting to warm the motion sensor up
@@ -68,12 +68,23 @@ def motionTest():
             print("on")
         elif motion_sensor.value() == 0: #print off when no motion is detected
             print("off")
+        else:
+            print("Something is fucking wrong")
+        
 
 # Test the light sensor
 def lightSensorTest():
     print("On")
+    sleep(5)
     while True:
         if light_sensor.value == 1: #print dark when no light is detected
             print ("dark")
         elif light_sensor.value == 0: #print light when light is detected
             print("light")
+        elif light_sensor.value == 0 or light_sensor.value == 1:
+            print("The sensor is connected")
+        else:
+            print("Something is fucking wrong")
+            print(light_sensor.value)
+        sleep(0.5)
+
