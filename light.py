@@ -70,10 +70,12 @@ def motionTest():
             print("off")
         else:
             print("Something is fucking wrong")
+            print(motion_sensor.value)
+            
         
 
 # Test the light sensor
-def lightSensorTest():
+def lightTest():
     print("On")
     sleep(5)
     while True:
@@ -81,8 +83,6 @@ def lightSensorTest():
             print ("dark")
         elif light_sensor.value == 0: #print light when light is detected
             print("light")
-        elif light_sensor.value == 0 or light_sensor.value == 1:
-            print("The sensor is connected")
         else:
             print("Something is fucking wrong")
             print(light_sensor.value)
