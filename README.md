@@ -1,4 +1,4 @@
-# Night-Light
+# Night-Light DOESN"T WORK AS OFF THIS MOMENT
 Using Raspberry Pi pico 2W to make a night light using led lights, HC-SR501 Pir Motion IR Sensor and a LM393 5MM LDR Photosensitive Sensor.
 
 Connecting Motion Sensor
