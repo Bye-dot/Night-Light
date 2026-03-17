@@ -1,4 +1,4 @@
-# Night-Light DOESN"T WORK AS OFF THIS MOMENT
+# Night-Light
 Using Raspberry Pi pico 2W to make a night light using led lights, HC-SR501 Pir Motion IR Sensor and a LM393 5MM LDR Photosensitive Sensor.
 
 Connecting Motion Sensor
@@ -18,8 +18,10 @@ Connecting the Photosensitive Sensor
 To connecct the Photosensitive sensor to the Raspberry Pi pico 2W connect the VCC pin to the 3V3_OUT pin on the Raspberry Pi pico 2W, and the ground to any ground on the Raspberry Pi pico 2W and the output sensor to any GP pins. On the code, light_sensor = Pin(16, Pin.IN), change 16 to what ever pin you are using.
 
 
-NOTE:
+NOTES:
 
 PHOTOSENSITIVE SENSOR WILL NOT WORK IF YOU DON'T PLUG IT INTO THE 3V3_OUT PIN.
 
 Some HC-SR501 Pir Motion IR Sensor comes with a plastic dome around the sensor, which might cause some miss readings, a recomendation is to remove the cover.
+
+The functions that test the sensor doesn't really work at the moment
