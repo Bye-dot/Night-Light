@@ -24,4 +24,4 @@ PHOTOSENSITIVE SENSOR WILL NOT WORK IF YOU DON'T PLUG IT INTO THE 3V3_OUT PIN.
 
 Some HC-SR501 Pir Motion IR Sensor comes with a plastic dome around the sensor, which might cause some miss readings, a recomendation is to remove the cover.
 
-The functions that test the sensor doesn't really work at the moment
+The funcitons that test the sensors might work
