@@ -70,7 +70,7 @@ def motionTest():
             print("off")
         else:
             print("Something is fucking wrong")
-            print(motion_sensor.value)
+            print(motion_sensor.value())
             
         
 
@@ -79,12 +79,12 @@ def lightTest():
     print("On")
     sleep(5)
     while True:
-        if light_sensor.value == 1: #print dark when no light is detected
+        if light_sensor.value() == 1: #print dark when no light is detected
             print ("dark")
-        elif light_sensor.value == 0: #print light when light is detected
+        elif light_sensor.value() == 0: #print light when light is detected
             print("light")
         else:
             print("Something is fucking wrong")
-            print(light_sensor.value)
+            print(light_sensor.value())
         sleep(0.5)
 
