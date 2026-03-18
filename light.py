@@ -87,4 +87,3 @@ def lightTest():
             print("Something is fucking wrong")
             print(light_sensor.value())
         sleep(0.5)
-
