@@ -3,10 +3,12 @@ from time import sleep, time
 
 
 #sets the led to the proper pins
+#The numbers to the pins comes from the board layout of the Raspberry Pi Pico 2W.
+#the led varible is picked out as I am using red LEDs
 led_red1 = Pin(0, Pin.OUT)
 led_red2 = Pin(1, Pin.OUT)
 led_red3 = Pin(2, Pin.OUT)
-led = Pin("LED", Pin.OUT) #The on board led do not change!!
+led = Pin("LED", Pin.OUT) # The is for the on board led do not change pin location!!
 
 #set the proper pin for the motion sensor, and light sensor
 motion_sensor = Pin(22, Pin.IN, Pin.PULL_DOWN)
