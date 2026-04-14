@@ -38,7 +38,7 @@ def nightLight():
    
     last_motion_detected = 0  #initializes the variable for the motion sensor
     led_on = False
-    hold_time = 10 #Time to keep the lights on after not detecting motion
+    hold_time = 30 #Time to keep the lights on after not detecting motion
     
     while True:
         current_time = time() # This line resets the timer every time motion is seen
