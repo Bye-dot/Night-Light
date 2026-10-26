@@ -29,7 +29,8 @@ def Off():
 #Turns on the night light if there is motion detected, otherwise turns it off. 
 #Waits for 90 seconds before starting to warm the motion sensor up
 def nightLight():
-    #start up process, turns on the light for 2 seconds, then turns it off for 90 seconds to warm up the motion sensor
+    #start up process, turns on the light for 2 seconds, 
+    #then turns it off for 90 seconds to warm up the motion sensor
     Off()
     led.on()
     sleep(2)
