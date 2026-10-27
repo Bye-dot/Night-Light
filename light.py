@@ -4,6 +4,7 @@ from time import sleep, time
 
 #sets the led to the proper pins
 #The numbers to the pins comes from the board layout of the Raspberry Pi Pico 2W.
+# NOT the physical location of the pin
 #the led varible is picked out as I am using red LEDs
 led_red1 = Pin(0, Pin.OUT)
 led_red2 = Pin(1, Pin.OUT)
